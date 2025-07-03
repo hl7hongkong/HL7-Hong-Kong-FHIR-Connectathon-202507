@@ -1,0 +1,270 @@
+{
+  "resourceType": "Bundle",
+  "id": "c757873d-ec9a-4326-a141-556f43239520",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "d2f9f649-5555-4826-868b-84e015c1f1be"
+  },
+  "type": "document",
+  "timestamp": "2017-12-11T14:30:00.000+08:00",
+  "entry": [
+    {
+      "fullUrl": "Composition/30551ce1-5a28-4356-b684-1e639094ad4d",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "30551ce1-5a28-4356-b684-1e639094ad4d",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+            "valueString": "3"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+            "valueString": "eHRSS-1.1.0"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+            "valueString": "NBL"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+            "valueString": "BRANCHA"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "https://ehealth.gov.hk/FHIR",
+              "display": "Hong Kong eHR Healthcare Document"
+            }
+          ],
+					"text": "Hong Kong eHR Healthcare Document"
+        },
+        "subject": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "date": "2017-12-11T14:30:00.000+08:00",
+        "author": [
+          {
+            "reference": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+						"display": "Hong Kong Hospital"
+          }
+        ],
+        "title": "Hong Kong eHR Healthcare Document",
+        "section": [
+          {
+            "title": "Adverse Drug Reaction (Chinese Medicine System) Records",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/datadomain",
+                  "code": "CMADR",
+									"display": "Adverse Drug Reaction (Chinese Medicine System)"
+								}
+							],
+							"text": "Adverse Drug Reaction (Chinese Medicine System)"
+            },
+            "entry": [
+              {
+                "extension": [
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactonType",
+                    "valueString": "U"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  }
+                ],
+                "reference": "AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+                "identifier": {
+                  "system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+                  "value": "CMADR001"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3b3703a9-7a26-427c-9352-4e41f046d85e",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "2345679033"
+					}
+				],
+        "name": "Hong Kong Hospital"
+      }
+    },
+    {
+      "fullUrl": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2022-09-27T15:22:49.093+08:00"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "EHRNO"
+                }
+              ]
+            },
+            "value": "234567808800"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "ID"
+                }
+              ]
+            },
+            "value": "Q1730351"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "text": "CHAN, MAN MAN",
+            "family": "CHAN",
+            "given": [
+              "MAN MAN"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-12-25"
+      }
+    },
+    {
+      "fullUrl": "AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/1006713-CMLevelofserverityDesc",
+            "valueString": "Non-severe"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/1006714-CMLevelofserverityLocalDesc",
+            "valueString": "Fair"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active",
+              "display": "Active"
+            }
+          ]
+        },
+        "type": "intolerance",
+        "code": {
+          "coding": [
+            {
+              "system": "https://ehealth.org.hkk/FHIR/HKCTT",
+              "code": "9710022",
+              "display": "生地黃"
+            },
+            {
+              "system": "https://ehealth.org.hkk/FHIR/HCP/local/causativeAgent",
+              "code": "258",
+              "display": "生地"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "encounter": {
+          "reference": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2"
+        },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "噁心、嘔吐"
+              }
+            ],
+            "description": "噁心、嘔吐",
+            "severity": "NS",
+            "note": [
+              {
+                "text": "N/A"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+            "valueString": "8840188537"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/FHIR/HCP/local/EpisodeNum",
+            "value": "EP-12345"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "https://ehealth.gov.hk/FHIR/class",
+          "code": "UNKNOWN",
+          "display": "Unknown status"
+        }
+      }
+    }
+  ]
+}

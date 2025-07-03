@@ -1,0 +1,443 @@
+{
+  "resourceType": "Bundle",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "d2f9f649-5555-4826-868b-84e015c1f1be"
+  },
+  "type": "document",
+  "timestamp": "2022-12-01T05:04:48.865+00:00",
+  "entry": [
+    {
+      "fullUrl": "Composition/2fb40fdc-db52-4a80-991c-b352384c965a",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "2fb40fdc-db52-4a80-991c-b352384c965a",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+            "valueString": "3"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+            "valueString": "eHRSS-1.1.0"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+            "valueString": "NBL"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+            "valueString": "BRANCHA"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "https://ehealth.gov.hk/FHIR/",
+              "display": "Hong Kong eHR Healthcare Document"
+            }
+          ],
+					"text": "Hong Kong eHR Healthcare Document"
+        },
+				"subject": {
+					"reference": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616"
+				},
+        "date": "2022-12-01T05:04:48.111+08:00",
+        "author": [
+          {
+            "reference": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+						"display": "Hong Kong Hospital"
+          }
+        ],
+        "title": "Hong Kong eHR Healthcare Document",
+        "section": [
+          {
+            "title": "Chinese Medicines Dispensing Record",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/datadomain",
+                  "code": "CMRXD",
+                  "display": "Chinese Medicines Dispensing Record"
+                }
+              ],
+              "text": "Chinese Medicines Dispensing Record"
+            },
+            "entry": [
+              {
+                "extension": [
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactonType",
+                    "valueString": "U"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+                    "valueDateTime": "2017-03-04T08:30:00.000+08:00"
+                  }
+                ],
+                "reference": "MedicationDispense/534922e6-1e05-4b08-b0b3-068773c12658",
+                "identifier": {
+                  "system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+                  "value": "CMRXD-001"
+                }
+              },
+              {
+                "reference": "DocumentReference/0a9ead62-692d-4f6a-884b-9f456e0cdad6",
+                "identifier": {
+                  "system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+                  "value": "CMRXD-001"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3b3703a9-7a26-427c-9352-4e41f046d85e",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "2345679033"
+					}
+				],
+				"name": "Hong Kong Hospital",
+				"alias": [
+					"HKH"
+				]
+      }
+    },
+    {
+      "fullUrl": "DocumentReference/0a9ead62-692d-4f6a-884b-9f456e0cdad6",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "2345679033.BRANCHA.CMRXD.CMRXD-001.IMAGEFILE.pdf.234567808800.20231025100003"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "MedicationDispense/534922e6-1e05-4b08-b0b3-068773c12658",
+      "resource": {
+        "resourceType": "MedicationDispense",
+        "id": "534922e6-1e05-4b08-b0b3-068773c12658",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/1006975-CMDoseRemarks",
+            "valueString": "代煎"
+          }
+        ],
+        "status": "completed",
+        "medication": {
+          "reference": "Medication/742e2458-a8eb-4206-a0ad-0435d163470b"
+        },
+        "subject": {
+          "reference": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616"
+        },
+        "encounter": {
+          "reference": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2"
+        },
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/DispenserRole"
+            }
+          }
+        ],
+        "authorizingPrescription": [
+          {
+            "reference": "MedicationRequest/MedicationRequest001"
+          }
+        ],
+        "whenHandedOver": "2020-01-15",
+        "dosageInstruction": [
+          {
+            "extension": [
+              {
+                "url": "https://ehealth.gov.hk/FHIR/1006957-CMdoseGpNum",
+                "valueInteger": 1
+              }
+            ],
+            "text": "服用2日 每日服用1劑 每劑煎煮後分2次服用 每次服用1包。已煎湯劑 每劑=2包 共4包。清水三碗煎至一碗，飯後服。",
+            "route": {
+              "coding": [
+                {
+                  "system": "https://ehealth.org.hk/FHIR/CMroute",
+                  "code": "ORL",
+                  "display": "口服"
+                }
+              ],
+              "text": "口服"
+            },
+            "doseAndRate": [
+              {
+                "doseQuantity": {
+                  "value": 10,
+                  "unit": "克",
+                  "system": "https://www.ehealth.gov.hk/FHIR/CMdoseUnitcd",
+                  "code": "1",
+                  "extension": [
+                    {
+                      "url": "https://ehealth.gov.hk/FHIR/1006968-DoseUnitLocalDesc",
+                      "valueString": "克"
+                    },
+                    {
+                      "url": "https://ehealth.gov.hk/FHIR/1006969-CMDoseUnitRemarks",
+                      "valueString": "N/A"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d58dd75b-cf09-4a1c-b913-c9e867f27616",
+        "identifier": [
+          {
+            "type": {
+              " Weiner": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "EHRNO"
+                }
+              ]
+            },
+            "value": "234567808800"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "ID"
+                }
+              ]
+            },
+            "value": "Q1730351"
+          }
+        ],
+        "name": [
+          {
+            "text": "CHAN, MAN MAN",
+            "family": "CHAN",
+            "given": [
+              "MAN MAN"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-12-25"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/DispenserRole",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "DispenserRole",
+        "organization": {
+          "reference": "Organization/dispenseInst"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/dispenseInst",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "dispenseInst",
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/FHIR/pvdr",
+            "value": "1000000000"
+          }
+        ],
+        "name": "中醫堂中醫診所",
+        "alias": [
+          "中醫堂"
+        ]
+      }
+    },
+    {
+      "fullUrl": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+            "valueString": "8840188537"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/FHIR/HCP/local/EpisodeNum",
+            "value": "EP-12345"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "https://ehealth.gov.hk/FHIR/class",
+          "code": "UNKNOWN",
+          "display": "Unknown status"
+        }
+      }
+    },
+    {
+      "fullUrl": "MedicationRequest/MedicationRequest001",
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MedicationRequest001",
+        "identifier": [
+          {
+            "system": "https://www.ehealth.gov.hk/FHIR/HCP/local/OrderNum",
+            "value": "PX 0116 2001 570"
+          }
+        ],
+        "status": "completed",
+        "intent": "order",
+        "medicationCodeableConcept": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "not-applicable"
+            }
+          ]
+        },
+        "requester": {
+          "reference": "PractitionerRole/requester"
+        }
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/requester",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "requester",
+        "practitioner": {
+          "reference": "Practitioner/PrescriberInfo"
+        },
+        "organization": {
+          "reference": "Organization/PrescriberInst"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/PrescriberInfo",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "PrescriberInfo",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/1006956-PrescriberChineseFullName",
+            "valueString": "陳大文"
+          }
+        ],
+        "name": [
+          {
+            "text": "CHAN TAI MAN"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/PrescriberInst",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "PrescriberInst",
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/FHIR/pvdr",
+            "value": "1000000000"
+          }
+        ],
+        "name": "中醫堂中醫診所",
+        "alias": [
+          "中醫堂"
+        ]
+      }
+    },
+    {
+      "fullUrl": "Medication/742e2458-a8eb-4206-a0ad-0435d163470b",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "742e2458-a8eb-4206-a0ad-0435d163470b",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/1006957-CMdoseGpNum",
+            "valueInteger": 1
+          }
+        ],
+        "code": {
+          "extension": [
+            {
+              "url": "https://ehealth.gov.hk/FHIR/1006958-CMtype",
+              "valueString": "DP"
+            },
+            {
+              "url": "https://ehealth.gov.hk/FHIR/1006959-DrugSequenceNum",
+              "valueInteger": 1
+            },
+            {
+              "url": "https://ehealth.gov.hk/FHIR/1006970-CMAdditionalInfo",
+              "valueString": "NA"
+            }
+          ],
+          "coding": [
+            {
+              "system": "https://www.ehealth.gov.hk/FHIR/HKCTT",
+              "code": "8000001",
+              "display": "黨參"
+            },
+            {
+              "system": "https://ehealth.gov.hk/FHIR/HCP/local/CM",
+              "code": "0DSH04",
+              "display": "黨參"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

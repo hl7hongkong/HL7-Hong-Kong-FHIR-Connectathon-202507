@@ -1,0 +1,169 @@
+{
+	"resourceType": "Bundle",
+	"id": "a3b05867-1e7c-4d21-ae89-321aec33594d",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:a3b05867-1e7c-4d21-ae89-321aec33594d"
+	},
+	"type": "document",
+	"timestamp": "2024-06-27T10:33:02.020+08:00",
+	"entry": [
+		{
+			"fullUrl": "Composition/e47eb769-9464-4326-8507-4048a32a1e29",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "e47eb769-9464-4326-8507-4048a32a1e29",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+						"valueString": "BRANCHA"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+						"valueString": "3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+						"valueString": "eHRSS-1.4.3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+						"valueString": "NBL"
+					}
+				],
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					],
+					"text": "Hong Kong eHR Healthcare Document"
+				},
+				"subject": {
+					"reference": "Patient/e0d8bc39-d292-46db-a9d0-249f87e1dcb2"
+				},
+				"date": "2024-06-27T10:33:02.020+08:00",
+				"author": [
+					{
+						"reference": "Organization/886cc237-a687-4693-ab8e-183a3b06fdf6",
+						"display": "Hong Kong Hospital"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Chinese Medicine Problem",
+						"code": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/datadomain",
+									"code": "CMPROB",
+									"display": "Chinese Medicine Problem"
+								}
+							],
+							"text": "Chinese Medicine Problem"
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionType",
+										"valueString": "D"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									}
+								],
+								"reference": "Condition/9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+								"identifier": {
+									"system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+									"value": "CMPROB001"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/e0d8bc39-d292-46db-a9d0-249f87e1dcb2",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "e0d8bc39-d292-46db-a9d0-249f87e1dcb2",
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "234567808800"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "Q1730351"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"text": "CHAN, MAN MAN",
+						"family": "CHAN",
+						"given": [
+							"MAN MAN"
+						]
+					}
+				],
+				"gender": "female",
+				"birthDate": "1974-12-25"
+			}
+		},
+		{
+			"fullUrl": "Condition/9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+				"clinicalStatus": "active",
+				"subject": [
+					{
+						"reference": "Patient/e0d8bc39-d292-46db-a9d0-249f87e1dcb2"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Organization/886cc237-a687-4693-ab8e-183a3b06fdf6",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "886cc237-a687-4693-ab8e-183a3b06fdf6",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "2345679033"
+					}
+				],
+				"name": "Hong Kong Hospital",
+				"alias": [
+					"HKH"
+				]
+			}
+		}
+	]
+}
