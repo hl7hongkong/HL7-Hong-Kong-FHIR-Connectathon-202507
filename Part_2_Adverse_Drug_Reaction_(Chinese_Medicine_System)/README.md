@@ -1,6 +1,6 @@
 # Exercise 2 - Adverse Drug Reaction (Chinese Medicine System)
 
-## [E7P2Q1] Which element in the AllergyIntolerance resource is the most reliable indicator for distinguishing between a CMADR and a CMAL1 record?
+## [E7P2Q1] Which element in the AllergyIntolerance resource is the most reliable indicator for distinguishing between an eHealth CMADR and an eHealth CMAL1 record?
 
 (A) The AllergyIntolerance.type element
 
