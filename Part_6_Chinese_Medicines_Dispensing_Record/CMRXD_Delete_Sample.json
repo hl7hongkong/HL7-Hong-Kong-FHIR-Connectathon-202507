@@ -1,0 +1,177 @@
+{
+	"resourceType": "Bundle",
+	"id": "4100fff7-6700-45ff-a6d7-8dc6ae56da9f",
+	"identifier": {
+		"system": "urn:ietf:rfc:3986",
+		"value": "urn:uuid:4100fff7-6700-45ff-a6d7-8dc6ae56da9f"
+	},
+	"type": "document",
+	"timestamp": "2024-06-27T10:33:02.020+08:00",
+	"entry": [
+		{
+			"fullUrl": "Composition/4131faef-a017-478e-8d06-5e83289f68ff",
+			"resource": {
+				"resourceType": "Composition",
+				"id": "4131faef-a017-478e-8d06-5e83289f68ff",
+				"extension": [
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+						"valueString": "BRANCHA"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+						"valueString": "3"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+						"valueString": "eHRSS-1.1.0"
+					},
+					{
+						"url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+						"valueString": "NBL"
+					}
+				],
+				"status": "final",
+				"type": {
+					"coding": [
+						{
+							"system": "https://ehealth.gov.hk/FHIR",
+							"display": "Hong Kong eHR Healthcare Document"
+						}
+					],
+					"text": "Hong Kong eHR Healthcare Document"
+				},
+				"subject": {
+					"reference": "Patient/faa7aa42-fa15-40a9-bb82-929c36bdca0f"
+				},
+				"date": "2024-06-27T10:33:02.020+08:00",
+				"author": [
+					{
+						"reference": "Organization/497b0e4e-0a15-4557-ae82-ddac35a9eab3",
+						"display": "Hong Kong Hospital"
+					}
+				],
+				"title": "Hong Kong eHR Healthcare Document",
+				"section": [
+					{
+						"title": "Chinese Medicines Dispensing Record",
+						"code": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/datadomain",
+									"code": "CMRXD",
+									"display": "Chinese Medicines Dispensing Record"
+								}
+							],
+							"text": "Chinese Medicines Dispensing Record"
+						},
+						"entry": [
+							{
+								"extension": [
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-TransactionType",
+										"valueString": "D"
+									},
+									{
+										"url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+										"valueDateTime": "2024-06-27T10:33:02.020+08:00"
+									}
+								],
+								"reference": "MedicationDispense/9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+								"identifier": {
+									"system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+									"value": "CMRXD-001"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/faa7aa42-fa15-40a9-bb82-929c36bdca0f",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "faa7aa42-fa15-40a9-bb82-929c36bdca0f",
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "EHRNO"
+								}
+							]
+						},
+						"value": "234567808800"
+					},
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+									"code": "ID"
+								}
+							]
+						},
+						"value": "Q1730351"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"text": "CHAN, MAN MAN",
+						"family": "CHAN",
+						"given": [
+							"MAN MAN"
+						]
+					}
+				],
+				"gender": "female",
+				"birthDate": "1974-12-25"
+			}
+		},
+		{
+			"fullUrl": "MedicationDispense/9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+			"resource": {
+				"resourceType": "MedicationDispense",
+				"id": "9f921fff-dccb-47d7-9a0d-0ae72867e8de",
+				"status": "completed",
+				"medicationReference": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+              "valueCode": "not-applicable"
+            }
+          ]
+				},
+				"subject": [
+					{
+						"reference": "Patient/faa7aa42-fa15-40a9-bb82-929c36bdca0f"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Organization/497b0e4e-0a15-4557-ae82-ddac35a9eab3",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "497b0e4e-0a15-4557-ae82-ddac35a9eab3",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "2345679033"
+					}
+				],
+				"name": "Hong Kong Hospital",
+				"alias": [
+					"HKH"
+				]
+			}
+		}
+	]
+}
