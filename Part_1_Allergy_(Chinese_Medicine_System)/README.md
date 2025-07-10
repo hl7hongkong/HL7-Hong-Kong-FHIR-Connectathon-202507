@@ -4,7 +4,7 @@
 
 (A) To specify the severity level of the allergic reaction caused by the allergen.
 
-(B) To provide the name of the reported allergen and its level of certainty using a recognized terminology.
+(B) To provide the name of the reported allergen using a recognized terminology.
 
 (C) To indicate the impact of the allergic reaction.
 
