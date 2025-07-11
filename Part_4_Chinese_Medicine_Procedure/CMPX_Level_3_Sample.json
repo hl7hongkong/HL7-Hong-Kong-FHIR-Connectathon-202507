@@ -1,0 +1,258 @@
+{
+  "resourceType": "Bundle",
+  "id": "c757873d-ec9a-4326-a141-556f43239520",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "d2f9f649-5555-4826-868b-84e015c1f1be"
+  },
+  "type": "document",
+  "timestamp": "2022-12-01T15:04:48.865+08:00",
+  "entry": [
+    {
+      "fullUrl": "Composition/30551ce1-5a28-4356-b684-1e639094ad4d",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "30551ce1-5a28-4356-b684-1e639094ad4d",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-ComplianceLevel",
+            "valueString": "3"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-DomainVersion",
+            "valueString": "eHRSS-1.1.0"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-UploadMode",
+            "valueString": "NBL"
+          },
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-SendingLocation",
+            "valueString": "BRANCHA"
+          }
+        ],
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "https://ehealth.gov.hk/FHIR",
+              "display": "Hong Kong eHR Healthcare Document"
+            }
+          ],
+          "text": "Hong Kong eHR Healthcare Document"
+        },
+        "subject": {
+          "reference": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616"
+        },
+        "date": "2023-01-31T16:30:05.005+08:00",
+        "author": [
+          {
+            "reference": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+            "display": "Hong Kong Hospital"
+          }
+        ],
+        "title": "Hong Kong eHR Healthcare Document",
+        "section": [
+          {
+            "title": "Chinese Medicine Procedure",
+            "code": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/datadomain",
+                  "code": "CMPX",
+                  "display": "Chinese Medicine Procedure"
+                }
+              ],
+              "text": "Chinese Medicine Procedure"
+            },
+            "entry": [
+              {
+                "extension": [
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateDatetime",
+                    "valueDateTime": "2023-01-31T16:30:05.005+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordCreateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordLastUpdateDatetime",
+                    "valueDateTime": "2023-01-31T16:30:05.005+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstIdentifier",
+                    "valueString": "2345679033"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-RecordUpdateInstName",
+                    "valueString": "Hong Kong Hospital"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactionDateTime",
+                    "valueDateTime": "2023-01-31T16:30:05.005+08:00"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-TransactonType",
+                    "valueString": "U"
+                  },
+                  {
+                    "url": "https://ehealth.gov.hk/FHIR/99999999-LastUpdateDateTime",
+                    "valueDateTime": "2023-01-31T16:30:05.005+08:00"
+                  }
+                ],
+                "reference": "Procedure/c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+                "identifier": {
+                  "system": "https://ehealth.gov.hk/FHIR/HCP/local/Recordkey",
+                  "value": "CMPX001"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/3b3703a9-7a26-427c-9352-4e41f046d85e",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "3b3703a9-7a26-427c-9352-4e41f046d85e",
+				"identifier": [
+					{
+						"system": "https://ehealth.gov.hk/FHIR/pvdr",
+						"value": "2345679033"
+					}
+				],
+        "name": "Hong Kong Hospital"
+      }
+    },
+    {
+      "fullUrl": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d58dd75b-cf09-4a1c-b913-c9e867f27616",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "https://ehealth.gov.hk/FHIR/typeofID-ext",
+                  "code": "EHRNO"
+                }
+              ]
+            },
+            "value": "234567808800"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://ehealth.gov.hk/fhir/typeofID-ext",
+                  "code": "ID"
+                }
+              ]
+            },
+            "value": "Q1730351"
+          }
+        ],
+        "name": [
+          {
+            "text": "CHAN, MAN MAN",
+            "family": "CHAN",
+            "given": [
+              "MAN MAN"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1974-12-25"
+      }
+    },
+    {
+      "fullUrl": "Procedure/c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "c7781f44-6df8-4a8b-9e06-0b34263a47c5",
+        "status": "completed",
+        "code": {
+          "coding": [
+            {
+              "system": "https://ehealth.gov.hk/FHIR/HKCTT",
+              "code": "9730000",
+              "display": "毫針療法"
+            },
+            {
+              "system": "https://ehealth.gov.hk/FHIR/HCP/local/procedure",
+              "code": "T001",
+              "display": "毫針"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/d58dd75b-cf09-4a1c-b913-c9e867f27616"
+        },
+        "encounter": {
+          "reference": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2"
+        },
+        "performedDateTime": "2021-07-10T12:30:00.000+08:00",
+        "bodySite": [
+          {
+            "extension": [
+              {
+                "url": "https://eheahth.gov.hk/FHIR/1006679-CMprocSiteSeqNum",
+                "valueInteger": 1
+              }
+            ],
+            "coding": [
+              {
+                "system": "https://www.health.gov.hk/FHIR/HKCTT",
+                "code": "9740161",
+                "display": "足三里"
+              },
+              {
+                "extension": [
+                  {
+                    "url": "https://eheahth.gov.hk/FHIR/1006685-CMprocSiteComment",
+                    "valueString": "平補平瀉"
+                  }
+                ],
+                "system": "https://www.ehealth.gov.hk/FHIR/HCP/local/CMprocSite",
+                "code": "ST36",
+                "display": "足三里"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Encounter/169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "169281c8-fb76-4e9c-b30f-3dfb3a7f53f2",
+        "extension": [
+          {
+            "url": "https://ehealth.gov.hk/FHIR/99999999-AttendanceInstIdentifier",
+            "valueString": "9938744799"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://ehealth.gov.hk/FHIR/HCP/local/EpisodeNum",
+            "value": "OP123456"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://ehealth.gov.hk/FHIR/class",
+          "code": "UNKNOWN",
+          "display": "Unknown status"
+        }
+      }
+    }
+  ]
+}
